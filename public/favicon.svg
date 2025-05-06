@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="16"
+   height="16"
+   viewBox="0 0 16 16"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   sodipodi:docname="r-gibson_logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="36.548582"
+     inkscape:cx="7.1001387"
+     inkscape:cy="8.7144284"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <inkscape:path-effect
+       effect="mirror_symmetry"
+       start_point="7.5259972,5.8234583"
+       end_point="7.5259972,8.9963726"
+       center_point="7.5259972,7.4099155"
+       id="path-effect4"
+       is_visible="true"
+       lpeversion="1.2"
+       lpesatellites=""
+       mode="free"
+       discard_orig_path="false"
+       fuse_paths="false"
+       oposite_fuse="false"
+       split_items="false"
+       split_open="false"
+       link_styles="false" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <ellipse
+       style="fill:#b4befe;fill-opacity:1;stroke-width:1.47749"
+       id="path2"
+       ry="6.1522145"
+       rx="7.4967861"
+       cy="9.7752295"
+       cx="8.0393858" />
+    <path
+       style="fill:#1e1e2e;fill-opacity:1;stroke-width:1.57741"
+       id="path3"
+       inkscape:path-effect="#path-effect4"
+       sodipodi:type="arc"
+       sodipodi:cx="5.3784761"
+       sodipodi:cy="7.4099154"
+       sodipodi:rx="2.147521"
+       sodipodi:ry="1.5864571"
+       d="m 7.5259972,7.4099154 c 0,0.8761761 -0.9614779,1.5864572 -2.1475211,1.5864572 -1.1860431,0 -2.147521,-0.7102811 -2.147521,-1.5864572 0,-0.876176 0.9614779,-1.5864571 2.147521,-1.5864571 1.1860432,0 2.1475211,0.7102811 2.1475211,1.5864571 z m 0,0 c 0,0.8761761 0.9614779,1.5864572 2.1475211,1.5864572 1.1860427,0 2.1475207,-0.7102811 2.1475207,-1.5864572 0,-0.876176 -0.961478,-1.5864571 -2.1475207,-1.5864571 -1.1860432,0 -2.1475211,0.7102811 -2.1475211,1.5864571 z"
+       transform="matrix(1.4622269,0,0,1.4929231,-3.0219092,-0.82506594)" />
+    <path
+       id="path1"
+       style="fill:#6c7086;fill-opacity:1;stroke-width:1.6209"
+       d="M 8.0105302,0.06916692 C 3.6518476,0.07049572 0.11914954,4.4130711 0.1196457,9.7690513 c 9.3316e-4,0.011702 0.001887,0.023398 0.002854,0.035093 H 15.901415 c 9.93e-4,-0.011689 0.002,-0.023393 0.003,-0.035093 C 15.9049,4.4117004 12.37046,0.06855691 8.0106623,0.06916692 Z"
+       sodipodi:nodetypes="sccccss"
+       inkscape:transform-center-y="-4.8813348"
+       inkscape:transform-center-x="-3.7471477e-05" />
+  </g>
+</svg>

@@ -4,12 +4,14 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "R.Gibson",
   description: "My Personal Website",
+  head: [['link', { rel: 'icon', href: '/favicon.svg' }]],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
       // { text: 'Blog', link: '/Blog' }
     ],
+    logo: '/favicon.svg',
 
     lastUpdated: {
       text: 'Updated at',

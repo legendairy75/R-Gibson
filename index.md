@@ -29,9 +29,12 @@ I can build a simple webpage using html or build an app with express.js.
 [roncrash1@gmail.com](mailto:roncrash1@gmail.com)
 
 ## My work
-* [Beer Me](https://beerme2-20014575297.us-central1.run.app/)
-* [Yelp Camp](https://yelpcamp-b9ul.onrender.com)
-* [VooDo](https://m7tqjc2w2e.us-east-2.awsapprunner.com/)
-
+* Web:
+  * [Beer Me](https://beerme2-20014575297.us-central1.run.app/)
+  * [Yelp Camp](https://yelpcamp-b9ul.onrender.com)
+  * [VooDo](https://m7tqjc2w2e.us-east-2.awsapprunner.com/)
+* Games:
+  * [Marine Tower](https://legendairy75.itch.io/marine-tower)
+  
 ## Resume
 [My resume](Resume.pdf)

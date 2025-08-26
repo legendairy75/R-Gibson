@@ -50,36 +50,10 @@ app.get('/', helloWorld, (req, res) =>{
 console.log('get recieved');
 })
 ```
-Then when I go to `/` and look at the console I would see 'Hello World' printed out followed by 'get recieved'. you can make more practical functions with midle ware and well liik at a few ina bit.
+Then when I go to `/` and look at the console I would see 'Hello World' printed out followed by 'get received'. 
 ## Error handling
 This is how express catches & handles errors, It basically operates as a middleware on its own but using the `(err, req, res, next)` inputs rather than `(req, res, next)`.
 
 ---
-## Beerme(2)
-Now that you know a little about express let me show it to you in action with my web-app Beerme.
-Beerme is built off of express using ejs as the template engine. when I first built beerme I built it from scratch compleating it within a week, then when I deployed it it kept runnung into errors, frustrated I decided to rebuild using the express genorator so that I didnt have to start from scratch again. I am telling you this only because of the way the express genorator structures  your application, usualy when you run `npm dev` your actualy running `node app.js` (a subject for another time),  with the generated express app `npm dev` runns `node ./bin/www`.  
-
----
-## Process
-Now in express there are 7 stages that the cliant and server go through to send and recive information
-
-
-1. Cliant request
-2. server determins what rout to use for req
-3. server exicutes middleware
-4. rout handler is exicuted
-5. server generates a responce
-6. server sends re to cliant
-7. cliant processes responce
-
-### Request
-### Server reserve
-### Middleware
-### Rout handler
-### Responce
-### Send
-### Cliant reserve
-
----
 ## Conclusion
-Express is a nodejs fraimwork that is lightwaight and extensible with the esintial tools needed for a website and the ability to add and build yourown through middleware
+Express is a nodejs framework that is lightweight and extensible with the essential tools needed for a website and the ability to add and build your own through middleware

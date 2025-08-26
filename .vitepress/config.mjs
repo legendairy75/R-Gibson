@@ -9,7 +9,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      // { text: 'Blog', link: '/Blog' }
+      { text: 'Blog', link: '/Blog' }
     ],
     logo: '/favicon.svg',
 

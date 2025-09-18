@@ -1,11 +1,12 @@
 #!/bin/bash
 
+sudo dnf update
+
 pkgs=(
   kitty
   zsh
   tmux
   neovim
-  node
   bat
   btop
   eza
@@ -13,6 +14,8 @@ pkgs=(
   wget
   sway
   fastfetch
+  curl
+  stow
 )
 for pkg in ${pkgs[@]}; do
   sudo dnf -y install ${pkg}
@@ -44,8 +47,29 @@ echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com
 dnf check-update
 sudo dnf install code # or code-insiders
 
+# Homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# vfox
+brew install vfox
+
+# github cli
+brew install gh
+
+# node
+vfox add nodejs
+
+vfox install nodejs@latest
+
 # pnpm
 sudo npm install -g pnpm@latest-10
+
+# Dotfiles
+
+git clone https://github.com/legendairy75/.dotfiles.git
+
+cd .dotfiles/
+stow zsh
 
 # yazi
 sudo dnf copr enable lihaohong/yazi

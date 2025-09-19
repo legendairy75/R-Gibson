@@ -41,7 +41,7 @@ rm -rf ~/.config/nvim/.git
 
 # dotfiles
 
-git clone https://github.com/legendairy75/.dotfiles.git
+git clone https://github.com/legendairy75/.dotfiles.git ~/
 
 cd .dotfiles/
 rm ~/.zshrc

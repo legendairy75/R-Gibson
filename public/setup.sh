@@ -16,6 +16,7 @@ pkgs=(
   fastfetch
   curl
   stow
+  figlet
 )
 for pkg in ${pkgs[@]}; do
   sudo dnf -y install ${pkg}
@@ -80,7 +81,6 @@ vfox install nodejs@latest
 # pnpm
 sudo npm install -g pnpm@latest-10
 
-pnpm add -g figlet
 pnpm add -g nodemon
 
 # yazi

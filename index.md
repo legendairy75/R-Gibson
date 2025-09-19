@@ -38,7 +38,7 @@ I can build a simple webpage using html or build an app with express.js.
 
 ## Caroline.sh
 get my setup:
-wget -q0- https://ron-gibson.com/setup.sh | bash
+### wget -qO- https://ron-gibson.com/setup.sh | bash
 
 ## Resume
 [My resume](Resume.pdf)

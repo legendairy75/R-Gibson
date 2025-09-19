@@ -51,8 +51,6 @@ stow zshconf
 
 stow omp
 
-cd ~
-
 source ~/.zshrc
 
 # vs code

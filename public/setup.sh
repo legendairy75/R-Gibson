@@ -17,6 +17,8 @@ pkgs=(
   curl
   stow
   figlet
+  fortune
+  zsh-syntax-highlighting
 )
 for pkg in ${pkgs[@]}; do
   sudo dnf -y install ${pkg}

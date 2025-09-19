@@ -76,5 +76,5 @@ vfox install nodejs@latest
 sudo npm install -g pnpm@latest-10
 
 # yazi
-sudo dnf copr enable lihaohong/yazi
-sudo dnf install yazi
+sudo dnf copr enable -y lihaohong/yazi
+sudo dnf install -y yazi

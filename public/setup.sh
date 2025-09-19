@@ -49,8 +49,6 @@ stow zsh
 stow zshconf
 stow omp
 
-source ~/.zshrc
-
 # vs code
 
 # sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
@@ -62,7 +60,13 @@ source ~/.zshrc
 # Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-source ~/.zshrc
+echo >>/home/$USER/.bashrc
+echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >>/home/$USER/.bashrc
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+sudo dnf group install development-tools
+
+brew install gcc
 
 # vfox
 brew install vfox

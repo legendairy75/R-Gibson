@@ -26,7 +26,12 @@ done
 git clone https://github.com/legendairy75/.dotfiles.git
 
 cd .dotfiles/
+rm ~/.zshrc
 stow zsh
+
+stow zshconf
+
+stow omp
 
 # oh my zsh
 sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
@@ -70,6 +75,8 @@ vfox install nodejs@latest
 
 # Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+source ~/.zshrc
 
 # vfox
 brew install vfox

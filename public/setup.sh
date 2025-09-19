@@ -46,12 +46,8 @@ git clone https://github.com/legendairy75/.dotfiles.git
 cd .dotfiles/
 rm ~/.zshrc
 stow zsh
-
 stow zshconf
-
 stow omp
-
-cd ~
 
 source ~/.zshrc
 

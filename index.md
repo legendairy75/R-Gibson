@@ -36,9 +36,9 @@ I can build a simple webpage using html or build an app with express.js.
 * Games:
   * [Marine Tower](https://legendairy75.itch.io/marine-tower)
 
-## Caroline.sh
-get my setup:
-### wget -qO- https://ron-gibson.com/setup.sh | bash
+<!-- ## Caroline.sh -->
+<!-- get my setup: -->
+<!-- ### wget -qO- https://ron-gibson.com/setup.sh | bash -->
 
 ## Resume
 [My resume](Resume.pdf)

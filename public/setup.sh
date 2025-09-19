@@ -62,20 +62,6 @@ rm -rf ~/.config/nvim/.git
 # Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-# vfox
-brew install vfox
-
-# github cli
-brew install gh
-
-# node
-vfox add nodejs
-
-vfox install nodejs@latest
-
-# Homebrew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
 source ~/.zshrc
 
 # vfox

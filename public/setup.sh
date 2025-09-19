@@ -43,7 +43,7 @@ rm -rf ~/.config/nvim/.git
 
 git clone https://github.com/legendairy75/.dotfiles.git ~/.dotfiles
 
-cd .dotfiles/
+cd ~/.dotfiles/
 rm ~/.zshrc
 stow zsh
 

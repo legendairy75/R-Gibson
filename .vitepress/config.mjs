@@ -10,7 +10,7 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Blog', link: '/Blog' },
-      { text: 'Dot Files', link '/DotFiles'}
+      { text: 'Dot Files', link: '/DotFiles'}
     ],
     logo: '/favicon.svg',
 

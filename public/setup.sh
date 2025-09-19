@@ -21,18 +21,6 @@ for pkg in ${pkgs[@]}; do
   sudo dnf -y install ${pkg}
 done
 
-# dotfiles
-
-git clone https://github.com/legendairy75/.dotfiles.git
-
-cd .dotfiles/
-rm ~/.zshrc
-stow zsh
-
-stow zshconf
-
-stow omp
-
 # oh my zsh
 sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 
@@ -51,6 +39,22 @@ git clone https://github.com/LazyVim/starter ~/.config/nvim
 
 rm -rf ~/.config/nvim/.git
 
+# dotfiles
+
+git clone https://github.com/legendairy75/.dotfiles.git
+
+cd .dotfiles/
+rm ~/.zshrc
+stow zsh
+
+stow zshconf
+
+stow omp
+
+cd ~
+
+source ~/.zshrc
+
 # vs code
 
 # sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
@@ -66,9 +70,6 @@ source ~/.zshrc
 
 # vfox
 brew install vfox
-
-# github cli
-brew install gh
 
 # node
 vfox add nodejs

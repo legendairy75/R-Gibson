@@ -21,6 +21,13 @@ for pkg in ${pkgs[@]}; do
   sudo dnf -y install ${pkg}
 done
 
+# dotfiles
+
+git clone https://github.com/legendairy75/.dotfiles.git
+
+cd .dotfiles/
+stow zsh
+
 # oh my zsh
 sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 
@@ -77,13 +84,6 @@ vfox install nodejs@latest
 
 # pnpm
 sudo npm install -g pnpm@latest-10
-
-# Dotfiles
-
-git clone https://github.com/legendairy75/.dotfiles.git
-
-cd .dotfiles/
-stow zsh
 
 # yazi
 sudo dnf copr enable lihaohong/yazi

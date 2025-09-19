@@ -1,18 +1,21 @@
 #!/bin/bash
 
+sudo dnf update
+
 pkgs=(
   kitty
   zsh
   tmux
   neovim
-  node
   bat
   btop
   eza
   git
   wget
-  sway
+  # sway
   fastfetch
+  curl
+  stow
 )
 for pkg in ${pkgs[@]}; do
   sudo dnf -y install ${pkg}
@@ -38,14 +41,49 @@ rm -rf ~/.config/nvim/.git
 
 # vs code
 
-sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\nautorefresh=1\ntype=rpm-md\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" | sudo tee /etc/yum.repos.d/vscode.repo >/dev/null
+# sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+# echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\nautorefresh=1\ntype=rpm-md\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" | sudo tee /etc/yum.repos.d/vscode.repo >/dev/null
+#
+# dnf check-update
+# sudo dnf install code # or code-insiders
 
-dnf check-update
-sudo dnf install code # or code-insiders
+# Homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# vfox
+brew install vfox
+
+# github cli
+brew install gh
+
+# node
+vfox add nodejs
+
+vfox install nodejs@latest
+
+# Homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# vfox
+brew install vfox
+
+# github cli
+brew install gh
+
+# node
+vfox add nodejs
+
+vfox install nodejs@latest
 
 # pnpm
 sudo npm install -g pnpm@latest-10
+
+# Dotfiles
+
+git clone https://github.com/legendairy75/.dotfiles.git
+
+cd .dotfiles/
+stow zsh
 
 # yazi
 sudo dnf copr enable lihaohong/yazi

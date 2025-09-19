@@ -48,6 +48,11 @@ rm ~/.zshrc
 stow zsh
 stow zshconf
 stow omp
+stow tmux
+stow tmuxPlugins
+stow nvim
+stow kitty
+stow yazi
 
 # vs code
 
@@ -75,6 +80,13 @@ vfox install nodejs@latest
 # pnpm
 sudo npm install -g pnpm@latest-10
 
+pnpm add -g figlet
+pnpm add -g nodemon
+
 # yazi
 sudo dnf copr enable -y lihaohong/yazi
 sudo dnf install -y yazi
+
+chsh -s /bin/zsh
+
+sudo reboot

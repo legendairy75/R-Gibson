@@ -5,7 +5,6 @@ echo "Updating!"
 
 sudo dnf update
 
-echo "Installing packages!"
 pkgs=(
   kitty
   zsh

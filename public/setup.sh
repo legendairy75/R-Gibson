@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# echo "Caraline Setup Script"
-# echo "Updating!"
+echo "Caraline Setup Script"
+echo "Updating!"
 
-sudo dnf update
+sudo dnf -y ugrade
 
 pkgs=(
   kitty
@@ -25,7 +25,7 @@ pkgs=(
 )
 for pkg in ${pkgs[@]}; do
   sudo dnf -y install ${pkg}
-  # echo "${pkg} installed"
+  echo "${pkg} installed"
 done
 
 echo "This is where the fun begins"

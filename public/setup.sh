@@ -1,11 +1,11 @@
 #!/bin/bash
 
 echo "Caraline Setup Script"
-echo "\nUpdating!"
+echo "Updating!"
 
 sudo dnf update
 
-echo "\nInstalling packages!"
+echo "Installing packages!"
 pkgs=(
   kitty
   zsh
@@ -31,12 +31,12 @@ done
 
 echo "This is where the fun begins"
 
-echo "\nInstalling ohmyzsh"
+echo "Installing ohmyzsh"
 # oh my zsh
 sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 
 <<<<<<< HEAD
-echo "\nInstalling oh my posh and nerd font"
+echo "Installing oh my posh and nerd font"
 =======
 #zsh syntax highlighting
 
@@ -53,13 +53,13 @@ wget -P ~/.local/share/fonts https://github.com/ryanoasis/nerd-fonts/releases/do
   rm 0xProto.zip &&
   fc-cache -fv
 
-echo "\nInstalling lazyvim"
+echo "Installing lazyvim"
 # lazyvim
 git clone https://github.com/LazyVim/starter ~/.config/nvim
 
 rm -rf ~/.config/nvim/.git
 
-echo "\nInstalling dotfiles"
+echo "Installing dotfiles"
 # dotfiles
 
 git clone https://github.com/legendairy75/.dotfiles.git ~/.dotfiles
@@ -83,7 +83,7 @@ stow yazi
 # dnf check-update
 # sudo dnf install code # or code-insiders
 
-echo "\nInstalling homebrew"
+echo "Installing homebrew"
 # Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
@@ -91,11 +91,11 @@ echo >>/home/$USER/.bashrc
 echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >>/home/$USER/.bashrc
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
-echo "\nInstalling vfox"
+echo "Installing vfox"
 # vfox
 brew install vfox
 
-echo "\nInstalling node & pnpm"
+echo "Installing node & pnpm"
 # node
 vfox add nodejs
 
@@ -106,16 +106,16 @@ sudo npm install -g pnpm@latest-10
 
 pnpm add -g nodemon
 
-echo "\nInstalling yazi"
+echo "Installing yazi"
 # yazi
 sudo dnf copr enable -y lihaohong/yazi
 sudo dnf install -y yazi
 
-echo "\nchoose default applications"
+echo "choose default applications"
 kcmshell6 componentchooser
 
 echo "making zsh default shell"
 chsh -s $(which zsh)
 
-echo "\nAll done! Rebooting in 5 seconds..."
+echo "All done! Rebooting in 5 seconds..."
 sudo reboot

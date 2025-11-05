@@ -1,0 +1,8 @@
+#+title: Readme
+#+author: Legendairy
+#+description: Readme for Nuxt app
+
+The aim of this app is to make a new main website with a coverpage, about page, blog content, and others using NUXT
+
+add unlighthouse
+add nuxt tailwind

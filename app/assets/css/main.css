@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+@import "@catppuccin/tailwindcss/mocha.css";
+
+@source "../../../content/**/*";
+/*@source "../../pages/markdown.vue";*/
+
+/*@theme{*/
+/*    --text-head: 2.25rem*/
+
+/*}*/

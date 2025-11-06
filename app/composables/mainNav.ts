@@ -8,6 +8,10 @@ export default () => {
             label: 'Blog',
             to: '/blog',
         },
+        {
+            label: 'Accessibility Test',
+            to: '/accessibility-test',
+        },
     ])
     return {items}
 }

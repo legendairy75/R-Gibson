@@ -1,10 +1,6 @@
 export default defineAppConfig({
     ui: {
-        colors: {
-            primary: 'blue',
-            secondary: 'purple',
-            info: 'green',
-            neutral: 'zinc'
-        }
+        primary: 'violet',
+        gray: 'slate'
     }
 })

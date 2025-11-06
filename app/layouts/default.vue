@@ -1,25 +1,11 @@
 <template>
-  <div>
-    <UHeader>
-
-      <template #title>
-        R.Gibson
-      </template>
-
-      <UNavigationMenu :items="items" />
-
-      <template #body>
-      <UNavigationMenu :items="items" />
-      </template>
-
-    </UHeader>
-    <UMain>
-      <slot/>
-    </UMain>
-    <UFooter ><UNavigationMenu :items="items" /></UFooter>
+  <div class="min-h-screen bg-gray-900 text-gray-100">
+    <slot />
   </div>
 </template>
 
-<script setup lang="ts">
-const { items } = mainNav()
+<script setup>
+// Force dark mode
+const colorMode = useColorMode()
+colorMode.preference = 'dark'
 </script>

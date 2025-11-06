@@ -1,5 +1,1 @@
-@import "tailwindcss";
-@import "@catppuccin/tailwindcss/mocha.css";
-@import "@nuxt/ui";
-
 @source "../../../content/**/*";

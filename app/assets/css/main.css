@@ -1,11 +1,57 @@
-@import "tailwindcss";
-@import "@nuxt/ui";
-@import "@catppuccin/tailwindcss/mocha.css";
-
 @source "../../../content/**/*";
-/*@source "../../pages/markdown.vue";*/
 
-/*@theme{*/
-/*    --text-head: 2.25rem*/
+/* Force dark theme */
+html {
+  background-color: #111827 !important; /* gray-900 */
+  color: #f9fafb !important; /* gray-50 */
+}
 
-/*}*/
+body {
+  background-color: #111827 !important; /* gray-900 */
+  color: #f9fafb !important; /* gray-50 */
+}
+
+#__nuxt {
+  background-color: #111827 !important; /* gray-900 */
+  color: #f9fafb !important; /* gray-50 */
+  min-height: 100vh;
+}
+
+/* Ensure Nuxt UI components use dark theme */
+.dark {
+  --color-primary-50: #ede9fe;
+  --color-primary-500: #8b5cf6;
+  --color-primary-600: #7c3aed;
+}
+
+/* Accessibility: Enhanced focus indicators for Catppuccin theme */
+:focus-visible {
+  outline: 2px solid #cba6f7 !important; /* Catppuccin Mauve */
+  outline-offset: 2px !important;
+  border-radius: 4px;
+}
+
+/* Ensure focus indicators are visible on all interactive elements */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid #cba6f7 !important; /* Catppuccin Mauve */
+  outline-offset: 2px !important;
+}
+
+/* High contrast focus for better accessibility */
+@media (prefers-contrast: high) {
+  :focus-visible,
+  button:focus-visible,
+  a:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible,
+  [tabindex]:focus-visible {
+    outline: 3px solid #cdd6f4 !important; /* Catppuccin Text */
+    outline-offset: 2px !important;
+  }
+}

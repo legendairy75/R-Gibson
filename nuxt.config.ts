@@ -1,9 +1,7 @@
-import { experimental_createRouter } from "vue-router/dist/router-BbqN7H95.mjs";
+// https://nuxt.com/docs/api/configuration/nuxt-config
 
 import tailwindcss from "@tailwindcss/vite";
 
-
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true, vscode: {} },
@@ -17,6 +15,9 @@ export default defineNuxtConfig({
     '@nuxt/image',
     // '@nuxtjs/tailwindcss'
   ],
+  colorMode: {
+    preference: 'dark'
+  },
   css: ['~/assets/css/main.css'],
   content: {
     experimental: { nativeSqlite: true },
@@ -40,6 +41,9 @@ export default defineNuxtConfig({
       //   return res ? `${res} - blog` : 'blog';
       // }
     }
+  },
+  ui: {
+    global: true
   },
   vite: {
       plugins: [

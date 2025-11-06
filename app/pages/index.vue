@@ -1,11 +1,11 @@
 <template>
-  <UPageHero color="secondary" title="R.Gibson" orientation="horizontal">
+  <UPageHero title="R.Gibson" orientation="horizontal">
 
     <template #description>
       <h2 class="text-primary">Web Developer</h2>
     </template>
 
-    <img src="/RGibson.png" alt="R.Gibson" width='350' style="border-radius: 50%">
+    <img src="/RGibson.png" alt="R.Gibson" width='350' style="border-radius: 50%" class="border-4 border-primary">
   </UPageHero>
 
   <UPageCard
@@ -15,15 +15,15 @@
   >
 
     <template #title>
-      <h2 class="text-3xl text-secondary">About</h2>
+      <h2 class="text-3xl text-primary">About</h2>
     </template>
 
   </UPageCard>
-  <h2 class="text-ctp-base">cat</h2>
+
   <UPageCard>
 
     <template #title>
-      <h2 class="text-3xl text-secondary">Skills</h2>
+      <h2 class="text-3xl text-primary">Skills</h2>
     </template>
 
   <UPageList>
@@ -46,7 +46,7 @@
 
   <UPageCard>
     <template #title>
-      <h2 class="text-3xl text-secondary">My Work</h2>
+      <h2 class="text-3xl text-primary">My Work</h2>
     </template>
   <UPageList>
     <UPageCard

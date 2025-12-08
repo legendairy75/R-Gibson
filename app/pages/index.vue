@@ -15,15 +15,14 @@
   >
 
     <template #title>
-      <h2 class="text-3xl text-secondary">About</h2>
+      <h2 class="text-3xl">About</h2>
     </template>
 
   </UPageCard>
-  <h2 class="text-ctp-base">cat</h2>
   <UPageCard>
 
     <template #title>
-      <h2 class="text-3xl text-secondary">Skills</h2>
+      <h2 class="text-3xl">Skills</h2>
     </template>
 
   <UPageList>
@@ -46,7 +45,7 @@
 
   <UPageCard>
     <template #title>
-      <h2 class="text-3xl text-secondary">My Work</h2>
+      <h2 class="text-3xl">My Work</h2>
     </template>
   <UPageList>
     <UPageCard

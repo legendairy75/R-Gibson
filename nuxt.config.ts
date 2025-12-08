@@ -34,12 +34,16 @@ export default defineNuxtConfig({
         format: ['webp', 'jpg', 'png'],
     },
   app: {
+    baseURL: process.env.NODE_ENV === 'production' ? '/ncblog/' : '/',
     head: {
 
       titleTemplate: 'R.Gibson' //(res) => {
       //   return res ? `${res} - blog` : 'blog';
       // }
     }
+  },
+  nitro: {
+    preset: 'github_pages'
   },
   vite: {
       plugins: [

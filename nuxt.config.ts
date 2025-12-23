@@ -48,7 +48,7 @@ export default defineNuxtConfig({
     }
   },
   nitro: {
-    preset: 'https://ron.gibson.com'
+    preset: 'github_pages'
   },
   vite: {
       plugins: [

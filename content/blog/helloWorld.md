@@ -8,13 +8,7 @@ date: 10/29/25
 This is some text
 
 ::card
-
 weee
-
 ::
 
-::h1
-
-waaaa
-
-::
+# waaaa

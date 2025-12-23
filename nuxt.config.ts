@@ -34,7 +34,9 @@ export default defineNuxtConfig({
         format: ['webp', 'jpg', 'png'],
     },
   app: {
-    baseURL: process.env.NODE_ENV === 'production' ? '/ncblog/' : '/',
+    // baseURL: process.env.NODE_ENV === 'production' ? '/ncblog/' : '/',
+      baseURL: '/',
+      cdnURL: '/',
     head: {
 
       titleTemplate: 'R.Gibson',
@@ -48,7 +50,11 @@ export default defineNuxtConfig({
     }
   },
   nitro: {
-    preset: 'github_pages'
+    preset: 'github_pages',
+      prerender: {
+          crawlLinks: true,
+          routes: ['/']
+      }
   },
   vite: {
       plugins: [

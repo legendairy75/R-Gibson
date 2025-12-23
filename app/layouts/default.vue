@@ -1,6 +1,6 @@
 <template>
   <div>
-    <UHeader>
+<!--    <UHeader>
 
       <template #title>
         R.Gibson
@@ -12,14 +12,15 @@
       <UNavigationMenu :items="items" />
       </template>
 
-    </UHeader>
+    </UHeader>-->
+    <MyHeader/>
     <UMain>
       <slot/>
     </UMain>
-    <UFooter ><UNavigationMenu :items="items" /></UFooter>
+    <UFooter ><UNavigationMenu :items="footItems" /></UFooter>
   </div>
 </template>
 
 <script setup lang="ts">
-const { items } = mainNav()
+const { footItems } = mainNav()
 </script>

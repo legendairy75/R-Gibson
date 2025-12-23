@@ -37,9 +37,14 @@ export default defineNuxtConfig({
     baseURL: process.env.NODE_ENV === 'production' ? '/ncblog/' : '/',
     head: {
 
-      titleTemplate: 'R.Gibson' //(res) => {
-      //   return res ? `${res} - blog` : 'blog';
-      // }
+      titleTemplate: 'R.Gibson',
+        link: [
+            {
+                rel: 'icon',
+                type: 'image/x-icon',
+                href: '/favicon.svg'
+            }
+        ]
     }
   },
   nitro: {

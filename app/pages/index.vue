@@ -2,7 +2,7 @@
   <UPageHero color="secondary" title="R.Gibson" orientation="horizontal">
 
     <template #description>
-      <h2 class="text-primary">Web Developer</h2>
+      <h2 class="text-primary">Devops</h2>
     </template>
 
     <img src="/RGibson.png" alt="R.Gibson" width='350' style="border-radius: 50%">
@@ -10,8 +10,7 @@
 
   <UPageCard
   class="content"
-  description="Hello! My name Is Cameron Gibson and I'm a backend web developer. I started programming when I was a child
-  and built programs with js and visual basic. I can build a simple webpage using html, build an app with express.js or NUXT.js."
+  :description='aboutDescription'
   >
 
     <template #title>
@@ -54,7 +53,7 @@
         variant="ghost"
     >
       <template #body>
-        <UUser :name="work.name" :description="work.description" size="xl" class="relative" />
+        <UUser :name="work.name" :to="work.to" :description="work.description" size="xl" class="relative" />
       </template>
     </UPageCard>
   </UPageList>
@@ -64,43 +63,23 @@
 
 </template>
 <script setup lang="ts">
+import aboutDescription from '../../assets/description.md?raw'
 const skills = ref([
   {
-    name: 'Javascript',
+    name: 'linux',
     // description: 'benjamincanac',
-    // to: 'https://github.com/benjamincanac',
     target: '_blank',
   },
-  {
-    name: 'Node.js',
-    target: '_blank',
-  },
-  {
-    name: 'Vue.js',
-    target: '_blank',
-  },
-  {
-    name: 'Nuxt.js',
-    target: '_blank',
-  },
-  {
-    name: 'MongoDB',
-    target: '_blank',
-  },
-  // {
-  //   name: 'CSS',
-  //   target: '_blank',
-  // },
 ])
 const works = ref([
   {
-    name:'Beer Me'
+    name:'Beer Me',
+    to: 'https://beerme2-20014575297.us-central1.run.app/',
+    target: '_blank',
   },
   {
-    name:'Yelp Camp'
+    name:'Marine Tower',
+    to: 'https://legendairy75.itch.io/marine-tower',
   },
-  {
-    name:'Marine Tower'
-  }
 ])
 </script>

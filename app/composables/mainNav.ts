@@ -7,7 +7,24 @@ export default () => {
         {
             label: 'Blog',
             to: '/blog',
+            icon: 'i-lucide-pen'
+        }, {
+            label: 'Dot files',
+            to: '/dotfiles',
+            icon: 'i-lucide-folder-dot'
+        }, {
+            label: 'Notes',
+            to: 'https://github.com/legendairy75/notes',
+            icon: 'i-lucide-book-open',
+            active: route.path.startsWith('/docs/getting-started')
+        },
+    ]);
+    const footItems = computed<NavigationMenuItem[]>(() => [
+        {
+            label: 'Blog',
+            to: '/blog',
+            icon: 'i-lucide-pen'
         },
     ])
-    return {items}
+    return {items, footItems}
 }

@@ -22,7 +22,7 @@ I'm building towards a career in DevOps / infrastructure engineering. I *don't h
 
 This blog exists to:
 
-- Trick my learning in public
+- Track my learning in public
 - Prove what I can actually do
 - Build a real portfolio instead of just a resume
 - Share useful things I wish someone had written for me

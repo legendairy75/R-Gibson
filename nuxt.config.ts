@@ -14,8 +14,9 @@ export default defineNuxtConfig({
     '@nuxt/test-utils',
     '@nuxt/icon',
     '@nuxt/fonts',
-    '@nuxt/image',
     // '@nuxtjs/tailwindcss'
+    '@nuxt/image',
+    'nuxt-studio'
   ],
   css: ['~/assets/css/main.css'],
   content: {

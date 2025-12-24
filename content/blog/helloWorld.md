@@ -26,7 +26,7 @@ This blog exists to:
 - Prove what I can actually do
 - Build a real portfolio instead of just a resume
 - Share useful things I wish someone had written for me
-  ---
+---
 
 ## What You'll Find Here
 

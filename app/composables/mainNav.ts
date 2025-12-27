@@ -12,7 +12,11 @@ export default () => {
             label: 'Dot files',
             to: '/dotfiles',
             icon: 'i-lucide-folder-dot'
-        }, {
+        },{
+            label: 'Gitron',
+            to: 'https://git.ron-gibson.com',
+            icon: 'i-lucide-folder-git-2'
+        },{
             label: 'Notes',
             to: 'https://github.com/legendairy75/notes',
             icon: 'i-lucide-book-open',

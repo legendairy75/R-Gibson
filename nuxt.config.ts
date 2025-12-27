@@ -16,7 +16,6 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     // '@nuxtjs/tailwindcss'
     '@nuxt/image',
-    'nuxt-studio'
   ],
   css: ['~/assets/css/main.css'],
   content: {

@@ -1,76 +1,76 @@
-# Nuxt Minimal Starter
+📝 Cameron’s Engineering Notebook
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.\
-Feet
+This repository contains the source files and content for my technical blog and public engineering notebook.
 
-## Setup
+It serves as a living knowledge base documenting what I’m learning, building, and breaking while studying:
 
-Make sure to install dependencies:
+Linux
 
-```bash
-# npm
-npm install
+DevOps & infrastructure
 
-# pnpm
-pnpm install
+Homelab projects
 
-# yarn
-yarn install
+Automation & scripting
 
-# bun
-bun install
-```
+Cloud, containers, and networking
 
-## Development Server
+The goal is to keep raw, practical notes and polished posts in one place — both for my own reference and for anyone else on a similar learning path.
 
-Start the development server on `http://localhost:3000`:
+<!--
+📂 Repository Structure
+.
+├── posts/          # Published blog posts
+├── drafts/         # Work-in-progress writing
+├── notes/          # Raw learning notes & experiments
+├── assets/         # Images and media used in posts
+└── README.md
 
-```bash
-# npm
-npm run dev
 
-# pnpm
-pnpm run dev
+(Adjust folders to match your actual layout.)
 
-# yarn
-yarn dev
+---
 
-# bun
-bun run dev
-```
+✍️ Writing Philosophy
 
-## Production
+This blog focuses on:
 
-Build the application for production:
+Real-world troubleshooting
 
-```bash
-# npm
-npm run build
+Homelab experimentation
 
-# pnpm
-pnpm build
+Documenting failures as well as successes
 
-# yarn
-yarn build
+Clear, reproducible steps
 
-# bun
-bun run build
-```
+Minimal fluff, maximum signal
 
-Locally preview production build:
+Everything here is written while actively learning — not as an expert, but as someone building real systems from scratch.
 
-```bash
-# npm
-npm run preview
+---
 
-# pnpm
-pnpm preview
+🚀 Goals
 
-# yarn
-yarn preview
+Build a searchable personal knowledge base
 
-# bun
-bun run preview
-```
+Share real DevOps/Linux learning paths
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Create reference material for future projects
+
+Help other beginners avoid common mistakes
+
+---
+
+🔧 Built With
+
+Markdown
+
+Git
+
+Nuxt
+
+📌 License
+
+Unless otherwise noted, all original writing in this repository is licensed under:
+
+Creative Commons Attribution 4.0 (CC BY 4.0)
+You are free to share and adapt with attribution. -->

@@ -1,7 +1,7 @@
 ---
 title: Helloworld
 subtitle: Why This Blog Exists
-date: 10/29/25
+date: 2025-12-17T05:00:00.000Z
 ---
 
 # Hello World
@@ -26,6 +26,7 @@ This blog exists to:
 - Prove what I can actually do
 - Build a real portfolio instead of just a resume
 - Share useful things I wish someone had written for me
+
 ---
 
 ## What You'll Find Here

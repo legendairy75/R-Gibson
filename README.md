@@ -67,6 +67,7 @@ Markdown for posts
 CSS / Tailwind / theme system
 
 Git & GitHub for version control
+-->
 
 📌 License
 
@@ -74,4 +75,3 @@ All original content in this repository is licensed under CC BY 4.0.
 Code/scripts in this repository are licensed under MIT.
 
 See the LICENSE file for details.
--->

@@ -2,6 +2,7 @@
 title: Zavala
 subtitle: my home server
 date: 2026-01-19
+id: 4
 ---
 
 # Zavala

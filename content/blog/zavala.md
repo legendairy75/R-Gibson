@@ -1,5 +1,5 @@
 ---
-title: zavala
+title: Zavala
 subtitle: my home server
 date: 2026-01-19
 ---

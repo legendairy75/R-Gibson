@@ -2,6 +2,7 @@
 title: 3 Things I Learned
 subtitle: Week 1 – Debugging, Tunnels, and Small Wins
 date: 2026-01-07
+id: 3
 ---
 ## 3 Things I Learned This Week Running My Own Servers
 

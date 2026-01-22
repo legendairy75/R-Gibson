@@ -2,6 +2,7 @@
 Title: My Homelab
 Subtitle: A Learning Journey in Self-Hosting and Infrastructure
 Date: 2025-12-31T06:00:00.000Z
+id: 1
 ---
 
 # My Homelab

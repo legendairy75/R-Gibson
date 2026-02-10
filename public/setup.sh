@@ -3,7 +3,7 @@
 echo "Caraline Setup Script"
 echo "Updating!"
 
-sudo dnf -y ugrade
+sudo dnf -y upgrade
 
 pkgs=(
   kitty
@@ -15,7 +15,7 @@ pkgs=(
   eza
   git
   wget
-  # sway
+  node
   fastfetch
   curl
   stow
@@ -87,15 +87,17 @@ echo >>/home/$USER/.bashrc
 echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >>/home/$USER/.bashrc
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
-echo "Installing vfox"
-# vfox
-brew install vfox
+#echo "Installing vfox"
+## vfox
+#brew install vfox
 
-echo "Installing node & pnpm"
-# node
-vfox add nodejs
+#echo "Installing node & pnpm"
+## node
+#vfox add nodejs
 
-vfox install nodejs@latest
+#vfox install nodejs@latest
+
+#vfox use nodejs@latest
 
 # pnpm
 sudo npm install -g pnpm@latest-10
@@ -111,7 +113,8 @@ echo "choose default applications"
 kcmshell6 componentchooser
 
 echo "making zsh default shell"
-chsh -s $(which zsh)
+chsh -s $(command -v zsh)
 
 echo "All done! Rebooting in 5 seconds..."
+sleep 5
 sudo reboot

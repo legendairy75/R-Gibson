@@ -113,7 +113,7 @@ echo "choose default applications"
 kcmshell6 componentchooser
 
 echo "making zsh default shell"
-chsh -s $(command -v zsh)
+sudo chsh -s /usr/bin/zsh $USER
 
 echo "All done! Rebooting in 5 seconds..."
 sleep 5

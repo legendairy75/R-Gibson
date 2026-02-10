@@ -11,8 +11,8 @@ pkgs=(
   tmux
   neovim
   bat
+  cargo
   btop
-  eza
   git
   wget
   node
@@ -86,6 +86,8 @@ echo "Installing homebrew"
 echo >>/home/$USER/.bashrc
 echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >>/home/$USER/.bashrc
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+cargo install eza
 
 #echo "Installing vfox"
 ## vfox

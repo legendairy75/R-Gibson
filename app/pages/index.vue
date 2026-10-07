@@ -22,14 +22,30 @@
 
     <template #title>
       <h2 class="text-3xl">Skills</h2>
+
     </template>
 
   <UPageList>
+
+    <UPageCard>
+      <div class="flex flex-wrap gap-4">
+      <NuxtImg 
+      v-for="(cert, index) in certs"
+      :key="index"
+      :target="_blank"
+      :src="cert.sorce"
+      :alt="cert.altText"
+      class="w-32"
+      />
+      </div>
+    </UPageCard>
+
+
     <UPageCard
         v-for="(skill, index) in skills"
         :key="index"
         variant="ghost"
-        :target="skill.target"
+        :target="_blank"
     >
       <template #body>
         <UUser :name="skill.name" :description="skill.description" size="xl" class="relative" />
@@ -81,5 +97,19 @@ const works = ref([
     name:'Marine Tower',
     to: 'https://legendairy75.itch.io/marine-tower',
   },
+])
+const certs = ref([
+  {
+    sorce:"https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/192856739",
+    altText:"SIMnet Certificate",
+  },
+  {
+    sorce:"https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/195400573",
+    altText:"SIMnet Certificate",
+  },
+  {
+    sorce:"https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/196358393",
+    altText:"SIMnet Certificate",
+  }
 ])
 </script>

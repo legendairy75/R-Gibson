@@ -97,6 +97,10 @@ const works = ref([
     name:'Marine Tower',
     to: 'https://legendairy75.itch.io/marine-tower',
   },
+  {
+    name:'Voodo',
+    to: 'https://github.com/legendairy75/vuedo2'
+  }
 ])
 const certs = ref([
   {

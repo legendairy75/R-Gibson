@@ -5,9 +5,18 @@
       <h2 class="text-primary">Devops</h2>
     </template>
 
+    <div class="mt-4">
+      <UButton @click="flipCoin">
+        Flip the Coin
+      </UButton>
+
+      <p v-if="result" class="text-xl font-bold mt-3">
+       Result: {{ result }}
+      </p>
+    </div>
+
     <img src="/RGibson.png" alt="R.Gibson" width='350' style="border-radius: 50%">
   </UPageHero>
-
   <UPageCard
   class="content"
   :description='aboutDescription'
@@ -80,6 +89,7 @@
 </template>
 <script setup lang="ts">
 import aboutDescription from '../../assets/description.md?raw'
+
 const skills = ref([
   {
     name: 'linux',
@@ -112,4 +122,33 @@ const certs = ref([
     altText:"SIMnet Certificate",
   }
 ])
+
+// Fetch the raw JS once — server: false keeps it client-only
+const { data: gistCode } = await useFetch(
+  'https://gist.githubusercontent.com/legendairy75/2d35b055802f98af182409217e368cce/raw/',
+  { responseType: 'text', server: false }
+)
+
+const result = ref(null)
+
+function flipCoin() {
+  if (!gistCode.value) return
+  // Wraps the gist code and calls the exported function
+  // Adjust 'flipCoin' to match whatever your gist function is named
+    // Strip ES module export syntax so new Function() can run it
+  const cleanCode = gistCode.value
+
+    .replace(/export\s+default\s+/g, '')
+    .replace(/export\s+/g, '')
+
+  try {
+    // Replace 'flipCoin' with whatever your Gist function is named
+    const fn = new Function(`${cleanCode}; return coinFlip();`)
+    result.value = fn()
+  } catch (e) {
+
+    console.error('Coin flip failed:', e)
+  }
+}
+
 </script>

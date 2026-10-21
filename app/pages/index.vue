@@ -8,6 +8,12 @@
     <img src="/RGibson.png" alt="R.Gibson" width='350' style="border-radius: 50%">
   </UPageHero>
 
+<iframe height="300" style="width: 100%;" scrolling="no" title="R-Card" src="https://codepen.io/editor/legendairy/embed/01a13501-4751-7510-b785-2e237b3f7a82?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true">
+  See the Pen <a href="https://codepen.io/editor/legendairy/pen/01a13501-4751-7510-b785-2e237b3f7a82">
+  R-Card</a> by legendairy (<a href="https://codepen.io/legendairy">@legendairy</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
   <UPageCard
   class="content"
   :description='aboutDescription'
@@ -114,6 +120,10 @@ const certs = ref([
   {
     sorce:"https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/196358393",
     altText:"SIMnet Certificate",
+  },
+  {
+    sorce:"https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/197665728",
+    altText:"SIMnet Certificate"
   }
 ])
 </script>

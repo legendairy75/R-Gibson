@@ -56,7 +56,7 @@
 
   <UPageCard
   title="Contact"
-  description="gibsoncameron@gmail.com"/>
+  description="gibsoncameron975@gmail.com"/>
 
   <UPageCard>
     <template #title>
@@ -100,6 +100,10 @@ const works = ref([
   {
     name:'Voodo',
     to: 'https://github.com/legendairy75/vuedo2'
+  },
+  {
+    name:'Yelpcamp',
+    to: 'https://yelpcamp-b9ul.onrender.com/'
   }
 ])
 const certs = ref([
